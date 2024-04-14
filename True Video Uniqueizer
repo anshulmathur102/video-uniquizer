@@ -1,0 +1,52 @@
+True Video Uniqueizer
+
+This script uniqueizes your videos.
+It will be useful if you need to change the videos.
+This script is using ffmpeg to convert your videos.
+
+- Random filename option
+- Flip option
+- Clear metadata option
+- Trim start option
+- Random resolution
+- Random volume
+- Random gamma
+- Random saturation
+- Random brightness
+- Random speed
+- Random crop
+
+
+Instruction:
+- (Optional) Set mode inside "convert.bat" file (easy, normal, hard, super_hard, ultra_hard, custom), for example: SET MODE=hard
+- (Optional) Set random filename inside "convert.bat" file, for example: SET RAND_FILENAME=1
+- (Optional) Set flip inside "convert.bat" file, for example: SET FLIP=-vf hflip
+- (Optional) Set clear metadata inside "convert.bat" file, for example: SET CLEAR_METADATA=-map_metadata -1
+- (Optional) Set trim start inside "convert.bat" file, for example: SET TRIM_START="1"
+- (Optional) Set custom mode params (if MODE=custom selected)
+- Place one or many videos inside "input" folder
+- Run the "convert.bat" script
+- The result will be inside the "output" folder
+
+Custom mode params:
+To set custom mode: "SET MODE=custom"
+And change custom params:
+IF %MODE%==custom (
+    SET RAND_FILENAME=0
+    SET FLIP=
+    SET CLEAR_METADATA=-map_metadata -1
+    SET TRIM_START="1"
+    SET RAND_RESOLUTION="1.10"
+    SET RAND_VOLUME="1.20"
+    SET RAND_GAMMA="1.20"
+    SET RAND_SATURATION="1.20"
+    SET RAND_BRIGHTNESS="0.20"
+    SET RAND_SPEED="1.08"
+    SET RAND_CROP="0.90"
+)
+You may share your config with each other.
+For example, you made a config that was successful on TikTok (YouTube Shorts, Instagram), then you may share it with other members.
+
+System Requirements:
+- Windows OS (7, 8, 10, 11)
+------------------------------------------------------------------------------------------------------------------
